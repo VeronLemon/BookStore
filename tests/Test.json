@@ -1,0 +1,9 @@
+[
+    {
+        "book_id": 1,
+        "title": "Книга",
+        "author": "Автор",
+        "price": 1,
+        "quantity": 1
+    }
+]
