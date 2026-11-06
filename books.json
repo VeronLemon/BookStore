@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "book_id": 7,
+        "title": "привет",
+        "author": "хомяк",
+        "price": 100.0,
+        "quantity": 10
+    },
+    {
+        "book_id": 1,
+        "title": "1",
+        "author": "1",
+        "price": 1.0,
+        "quantity": 1
+    }
+]
