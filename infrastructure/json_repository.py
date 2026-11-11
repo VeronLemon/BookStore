@@ -2,9 +2,11 @@ import json
 from pathlib import Path
 
 from domain.book import Book
+from domain.repository import BookRepository
 
 
-class JsonBookRepository:
+class JsonBookRepository(BookRepository):
+
     def __init__(self, file_path=None):
         if file_path is None:
             self.file_path = Path(__file__).resolve().parent.parent / "books.json"

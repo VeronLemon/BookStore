@@ -12,5 +12,19 @@
         "author": "1",
         "price": 1.0,
         "quantity": 1
+    },
+    {
+        "book_id": 3,
+        "title": "3",
+        "author": "3",
+        "price": 3.0,
+        "quantity": 3
+    },
+    {
+        "book_id": 6,
+        "title": "4",
+        "author": "5",
+        "price": 4.0,
+        "quantity": 5
     }
 ]

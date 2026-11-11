@@ -1,5 +1,8 @@
+from domain.repository import BookRepository
+
+
 class BookService:
-    def __init__(self, repository):
+    def __init__(self, repository: BookRepository):
         self.repository = repository
 
     def add_book(self, book):

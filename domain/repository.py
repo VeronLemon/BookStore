@@ -1,39 +1,24 @@
-from domain.book import Book
+from abc import ABC, abstractmethod
 
 
-class BookRepository:
-    def __init__(self):
-        self.books = []
+class BookRepository(ABC):
 
+    @abstractmethod
     def add_book(self, book):
-        if not isinstance(book, Book):
-            raise TypeError("Можно добавлять только объекты класса Book")
+        pass
 
-        if self.get_book_by_id(book.book_id) is not None:
-            raise ValueError("Книга с таким ID уже существует")
-
-        self.books.append(book)
-
+    @abstractmethod
     def get_all_books(self):
-        return self.books
+        pass
 
+    @abstractmethod
     def get_book_by_id(self, book_id):
-        for book in self.books:
-            if book.book_id == book_id:
-                return book
-        return None
+        pass
 
+    @abstractmethod
     def remove_book(self, book_id):
-        book = self.get_book_by_id(book_id)
+        pass
 
-        if book is None:
-            raise ValueError("Книга не найдена")
-
-        self.books.remove(book)
-
+    @abstractmethod
     def update_book(self, book):
-        if not isinstance(book, Book):
-            raise TypeError("Можно обновлять только объекты класса Book")
-
-        if self.get_book_by_id(book.book_id) is None:
-            raise ValueError("Книга не найдена")
+        pass
